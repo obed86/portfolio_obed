@@ -5,23 +5,45 @@
   <meta charset=UTF-8>
   <meta name=viewport content=width=device-width, initial-scale=1.0>
   <link rel=stylesheet href=css/style.css> <title>Document</title>
-  <link href="//db.onlinewebfonts.com/c/13dbbd029d70f10549374a111e88aee0?family=Milkshake" rel="stylesheet" type="text/css"/>
+  <link href="//db.onlinewebfonts.com/c/13dbbd029d70f10549374a111e88aee0?family=Milkshake" rel="stylesheet"
+    type="text/css" />
   <script src="https://kit.fontawesome.com/6fe211577c.js" crossorigin="anonymous"></script>
+  <script src="https://code.jquery.com/jquery-3.4.1.js"></script>
 
 </head>
 
 <body>
   <div class="grid-container">
-  <div class="logo">
-    <span class="title obed">Obed</span>
-    <span class="title orta">Orta</span>
+    <div class="logo">
+      <span class="title obed">Obed</span>
+      <span class="title orta">Orta</span>
+    </div>
+    <div class="menu">
+      <a href="#"><i class="fas fa-bars"></i> </a>
+    </div>
+    <p class="text">Emprender no es fácil, pero es más sencillo si alguien te aconseja cómo hacerlo. Déjame ser tu
+      apoyo, hagamos crecer tu negocio y cumplir tus sueños juntos.</p>
+    <div class="person">
+      <img src="/img/obed.png" alt="">
+    </div>
+    <div class="social-media first">
+      <li><a href="https://www.facebook.com/Obed.UOrta" target="_blank"><span class="fab fa-facebook-f"></span></a></li>
+      <li><a href="https://twitter.com/orta_obed" target="_blank"><span class="fab fa-twitter"></span></a></li>
+      <li><a href="https://www.instagram.com/obed.orta/" target="_blank"><span class="fab fa-instagram"></span></a></li>
+      <li><a href="#"target="_blank"><span class="fab fa-linkedin-in"></span></a></li>
+      <li><a href="https://github.com/obed86"target="_blank"><span class="fab fa-github"></span></a></li>
+    </div>
+    <div class="footer">
+      <p>"Nunca pares <span>de aprender"</span></p>
+    </div>
   </div>
-  <div class="menu"></div>
-  <div class="text"></div>
-  <div class="person"></div>
-  <div class="social-media"></div>
-  <div class="footer"></div>
-</div>
+
+  <script>
+    $('.first li').click(function(){
+      $(this).toggleClass("shadow-1").siblings();
+      $(this).toggleClass("fill-color").siblings();
+    });
+ </script>
 </body>
 
 </html>

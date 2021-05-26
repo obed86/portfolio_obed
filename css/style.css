@@ -18,6 +18,7 @@
             #ffc100 50%);
     width: 100vw;
     height: 100vh;
+    place-items: center;
 }
 
 .logo {
@@ -44,26 +45,93 @@
 
 .menu {
     grid-area: menu;
+    color: #0D2235;
+    text-align: center;
+    font-size: 40px;
+    margin-top: 50px;
 }
 
 .text {
     grid-area: text;
+    color: #fff;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-weight: 500;
+    font-size: 25px;
+    text-align: center;
+    margin-left: 60px;
 }
 
 .person {
     grid-area: person;
+    padding-top: 40px;
 }
 
 .social-media {
     grid-area: social-media;
+    display: flex;
+    justify-content: center;
+    margin: 40px 0;
 }
+
+li {
+    position: relative;
+    list-style: none;
+    height: 50px;
+    width: 50px;
+    margin: 0 10px;
+    border-radius: 50%;
+    background: #ffc100;
+    cursor: pointer;
+    box-shadow: -3px -3px 7px #ffffff73,
+        3px 3px 5px rgba(94, 104, 121, 0.288);
+    text-align: center;
+}
+li a {
+    line-height: 50px;
+    font-size: 20px;
+    color: #2c2d31;
+}
+
+.first li.shadow-1 {
+    box-shadow: inset -3px -3px 7px #ffffff73,
+        inset 3px 3px 5px rgba(94, 104, 121, 0.288);
+}
+
+.first li.shadow-1 a {
+    font-size: 25px;
+}
+
+li:nth-child(1).fill-color a{
+    color: #4267B2;
+  }
+  li:nth-child(2).fill-color a{
+    color: #1DA1F2;
+  }
+  li:nth-child(3).fill-color a{
+    color: #E1306C;
+  }
+  li:nth-child(4).fill-color a{
+    color: #2867B2;
+  }
+  li:nth-child(5).fill-color a{
+    color: #333;
+  }
 
 .footer {
     grid-area: footer;
+    color: #fff;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-size: 25px;
+    font-weight: 500;
+}
+
+.footer span{
+    color: #0d2235;
 }
 
 
-@media (min-width: 1024px) {
+@media (max-width: 700px) {
+
     .logo {
         font-size: 2em;
         width: 32vw;
